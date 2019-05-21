@@ -1,0 +1,63 @@
+import ch.hellorin.challengames.service.challenge.status.InitialChallengeStatus;
+import ch.hellorin.challengames.service.challenge.status.FinalChallengeStatus;
+import ch.hellorin.challengames.service.challenge.status.ChallengeStatus;
+
+global ch.hellorin.challengames.service.challenge.status.FinalChallengeStatus finalStatus;
+dialect "mvel"
+
+rule "OPEN to IN_PROGRESS"
+    when
+        initialStatus:InitialChallengeStatus(initialStatus == ChallengeStatus.OPEN && targetStatus == ChallengeStatus.IN_PROGRESS && changeByChallengee == true)
+    then
+        finalStatus.isAuthorizedChallengeChange = true;
+end
+
+
+rule "OPEN to ACCEPTED"
+    when
+        initialStatus:InitialChallengeStatus(initialStatus == ChallengeStatus.OPEN && targetStatus == ChallengeStatus.ACCEPTED && changeByChallengee == true)
+    then
+        finalStatus.isAuthorizedChallengeChange = true;
+end
+
+rule "ACCEPTED to IN_PROGRESS"
+    when
+        initialStatus:InitialChallengeStatus(initialStatus == ChallengeStatus.ACCEPTED && targetStatus == ChallengeStatus.IN_PROGRESS && changeByChallengee == true)
+    then
+        finalStatus.isAuthorizedChallengeChange = true;
+end
+
+rule "ACCEPTED to ABANDONED"
+    when
+        initialStatus:InitialChallengeStatus(initialStatus == ChallengeStatus.ACCEPTED && targetStatus == ChallengeStatus.ABANDONED && changeByChallengee == true)
+    then
+        finalStatus.isAuthorizedChallengeChange = true;
+end
+
+rule "IN_PROGRESS to ABANDONED"
+    when
+        initialStatus:InitialChallengeStatus(initialStatus == ChallengeStatus.IN_PROGRESS && targetStatus == ChallengeStatus.ABANDONED && changeByChallengee == true)
+    then
+        finalStatus.isAuthorizedChallengeChange = true;
+end
+
+rule "OPEN to DECLINED"
+    when
+        initialStatus:InitialChallengeStatus(initialStatus == ChallengeStatus.OPEN && targetStatus == ChallengeStatus.DECLINED && changeByChallengee == true)
+    then
+        finalStatus.isAuthorizedChallengeChange = true;
+end
+
+rule "IN_PROGRESS to FINISHED"
+    when
+        initialStatus:InitialChallengeStatus(initialStatus == ChallengeStatus.IN_PROGRESS && targetStatus == ChallengeStatus.FINISHED && (changeByChallengee == true || changeByChallenger == true))
+    then
+        finalStatus.isAuthorizedChallengeChange = true;
+end
+
+rule "FINISHED to COMPLETED"
+    when
+        initialStatus:InitialChallengeStatus(initialStatus == ChallengeStatus.FINISHED && targetStatus == ChallengeStatus.COMPLETED && changeByChallenger == true)
+    then
+        finalStatus.isAuthorizedChallengeChange = true;
+end
