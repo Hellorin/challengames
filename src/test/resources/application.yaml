@@ -1,0 +1,9 @@
+spring:
+  data:
+    neo4j:
+      username: neo4j
+      password: neo4j4000
+
+igdb:
+  uri: https://api-v3.igdb.com/games/
+  api-key: e5e09fb8c3111dc6554a471f97cc74e2
