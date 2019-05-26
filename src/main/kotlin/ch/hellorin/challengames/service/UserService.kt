@@ -5,6 +5,8 @@ import ch.hellorin.challengames.exception.MissingUserException
 import ch.hellorin.challengames.persistance.model.node.User
 import ch.hellorin.challengames.persistance.repository.RoleRepository
 import ch.hellorin.challengames.persistance.repository.UserRepository
+import org.slf4j.Logger
+import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.security.core.authority.SimpleGrantedAuthority
 import org.springframework.security.core.userdetails.UserDetails
@@ -20,6 +22,9 @@ import kotlin.streams.toList
 class UserService(
         private val userRepository: UserRepository,
         private val roleRepository: RoleRepository) : IUserService, IMyUserService {
+
+    private val LOGGER : Logger = LoggerFactory.getLogger(UserService::class.java)
+
     @Autowired
     private var passwordEncoder: PasswordEncoder? = null
 
@@ -37,6 +42,7 @@ class UserService(
     @Throws(ExistingUserException::class)
     override fun addUser(username: String, email:String?, password: String, roles : List<String>) : Long {
         if (userRepository.findByName(username) == null) {
+            LOGGER.info("The user doesn't already exist -> creating it")
             var user = User(
                     username,
                     email,
@@ -45,6 +51,7 @@ class UserService(
             )
             return userRepository.save(user).id!!
         } else {
+            LOGGER.info("The user {} that we are trying to create already exist !", username)
             throw ExistingUserException()
         }
     }
