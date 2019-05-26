@@ -17,7 +17,7 @@ class FacadeMapper {
                 deadline = challenge.deadline,
                 status = StatusDto.OPEN,
                 totalTime = null,
-                submitter = null,
+                submitter = mapBusinessToDto(challenge.challenger),
                 challengee = mapBusinessToDto(challenge.challengee),
                 game = mapBusinessToDto(challenge.game),
                 raters = listOf(),
