@@ -1,4 +1,4 @@
-package ch.hellorin.challengames.service
+package ch.hellorin.challengames.service.user
 
 import ch.hellorin.challengames.exception.ExistingUserException
 import ch.hellorin.challengames.exception.MissingUserException

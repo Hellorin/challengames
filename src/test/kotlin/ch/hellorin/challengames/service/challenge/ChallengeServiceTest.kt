@@ -4,7 +4,7 @@ import ch.hellorin.challengames.configuration.ProviderConfiguration
 import ch.hellorin.challengames.configuration.TestConfiguration
 import ch.hellorin.challengames.exception.ExistingChallengeException
 import ch.hellorin.challengames.exception.MissingChallengeException
-import ch.hellorin.challengames.service.IUserService
+import ch.hellorin.challengames.service.user.IUserService
 import ch.hellorin.challengames.service.provider.GameDataDto
 import ch.hellorin.challengames.service.provider.IGameProvider
 import org.junit.Assert

@@ -1,6 +1,6 @@
 package ch.hellorin.challengames.configuration
 
-import ch.hellorin.challengames.service.UserService
+import ch.hellorin.challengames.service.user.UserService
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder

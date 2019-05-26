@@ -1,8 +1,7 @@
-package ch.hellorin.challengames.service
+package ch.hellorin.challengames.service.user
 
 import ch.hellorin.challengames.configuration.ProviderConfiguration
 import ch.hellorin.challengames.configuration.TestConfiguration
-import ch.hellorin.challengames.persistance.repository.RoleRepository
 import org.junit.Assert
 import org.junit.Test
 import org.junit.runner.RunWith

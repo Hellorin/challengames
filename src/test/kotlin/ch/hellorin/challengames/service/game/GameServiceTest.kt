@@ -1,6 +1,7 @@
-package ch.hellorin.challengames.service
+package ch.hellorin.challengames.service.game
 
 import ch.hellorin.challengames.configuration.TestConfiguration
+import ch.hellorin.challengames.service.game.IGameService
 import ch.hellorin.challengames.service.provider.GameDataDto
 import ch.hellorin.challengames.service.provider.IGameProvider
 import org.junit.Assert

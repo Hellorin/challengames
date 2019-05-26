@@ -7,8 +7,8 @@ import ch.hellorin.challengames.exception.MissingUserException
 import ch.hellorin.challengames.persistance.model.node.Challenge
 import ch.hellorin.challengames.persistance.model.node.User
 import ch.hellorin.challengames.persistance.repository.ChallengeRepository
-import ch.hellorin.challengames.service.IGameService
-import ch.hellorin.challengames.service.IUserService
+import ch.hellorin.challengames.service.game.IGameService
+import ch.hellorin.challengames.service.user.IUserService
 import ch.hellorin.challengames.service.challenge.status.ChallengeStatus
 import ch.hellorin.challengames.service.challenge.status.IChallengeStatusChangeService
 import ch.hellorin.challengames.service.provider.CannotChooseGameException

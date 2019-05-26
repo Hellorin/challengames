@@ -1,6 +1,6 @@
 package ch.hellorin.challengames.configuration
 
-import ch.hellorin.challengames.service.IUserService
+import ch.hellorin.challengames.service.user.IUserService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.CommandLineRunner
 import org.springframework.context.annotation.Configuration

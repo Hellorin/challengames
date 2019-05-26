@@ -1,7 +1,7 @@
 package ch.hellorin.challengames.rest.user
 
 import ch.hellorin.challengames.PlayerDto
-import ch.hellorin.challengames.service.UserService
+import ch.hellorin.challengames.service.user.UserService
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 import javax.ws.rs.Produces

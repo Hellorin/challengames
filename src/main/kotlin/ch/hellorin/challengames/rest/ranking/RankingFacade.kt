@@ -1,7 +1,7 @@
 package ch.hellorin.challengames.rest.ranking
 
 import ch.hellorin.challengames.RankingDataDto
-import ch.hellorin.challengames.service.IRankingService
+import ch.hellorin.challengames.service.ranking.IRankingService
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping

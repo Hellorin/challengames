@@ -1,7 +1,8 @@
-package ch.hellorin.challengames.service
+package ch.hellorin.challengames.service.game
 
 import ch.hellorin.challengames.persistance.model.node.Game
 import ch.hellorin.challengames.persistance.repository.GameRepository
+import ch.hellorin.challengames.service.user.UserService
 import ch.hellorin.challengames.service.provider.CannotChooseGameException
 import ch.hellorin.challengames.service.provider.IGameProvider
 import org.slf4j.Logger

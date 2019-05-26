@@ -7,7 +7,7 @@ import ch.hellorin.challengames.persistance.model.node.Role
 import ch.hellorin.challengames.persistance.repository.GameRepository
 import ch.hellorin.challengames.persistance.repository.RoleRepository
 import ch.hellorin.challengames.service.challenge.ChallengeService
-import ch.hellorin.challengames.service.UserService
+import ch.hellorin.challengames.service.user.UserService
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import org.junit.Before
 import org.junit.Test

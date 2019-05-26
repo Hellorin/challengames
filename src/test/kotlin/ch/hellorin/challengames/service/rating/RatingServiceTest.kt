@@ -1,4 +1,4 @@
-package ch.hellorin.challengames.service
+package ch.hellorin.challengames.service.rating
 
 import ch.hellorin.challengames.configuration.ProviderConfiguration
 import ch.hellorin.challengames.configuration.TestConfiguration
@@ -10,6 +10,7 @@ import ch.hellorin.challengames.persistance.model.node.Role
 import ch.hellorin.challengames.persistance.repository.ChallengeRepository
 import ch.hellorin.challengames.persistance.repository.GameRepository
 import ch.hellorin.challengames.persistance.repository.RoleRepository
+import ch.hellorin.challengames.service.user.UserService
 import ch.hellorin.challengames.service.challenge.ChallengeService
 import org.junit.Assert
 import org.junit.Before

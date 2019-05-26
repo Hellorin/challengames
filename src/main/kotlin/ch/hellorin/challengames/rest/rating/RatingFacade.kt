@@ -1,6 +1,6 @@
 package ch.hellorin.challengames.rest.rating
 
-import ch.hellorin.challengames.service.IRatingService
+import ch.hellorin.challengames.service.rating.IRatingService
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
 import java.security.Principal

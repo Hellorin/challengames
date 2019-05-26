@@ -1,7 +1,6 @@
-package ch.hellorin.challengames.service
+package ch.hellorin.challengames.service.user
 
 import ch.hellorin.challengames.configuration.ProviderConfiguration
-import ch.hellorin.challengames.configuration.SecurityConfiguration
 import ch.hellorin.challengames.configuration.TestConfiguration
 import ch.hellorin.challengames.exception.ExistingUserException
 import ch.hellorin.challengames.exception.MissingUserException
@@ -10,7 +9,6 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.data.neo4j.DataNeo4jTest
-import org.springframework.data.neo4j.repository.config.EnableNeo4jRepositories
 import org.springframework.test.context.ActiveProfiles
 import org.springframework.test.context.ContextConfiguration
 import org.springframework.test.context.junit4.SpringRunner

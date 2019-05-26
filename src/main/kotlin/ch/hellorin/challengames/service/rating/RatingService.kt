@@ -1,10 +1,11 @@
-package ch.hellorin.challengames.service
+package ch.hellorin.challengames.service.rating
 
 import ch.hellorin.challengames.exception.MissingChallengeException
 import ch.hellorin.challengames.exception.MissingUserException
 import ch.hellorin.challengames.exception.NotARaterException
 import ch.hellorin.challengames.persistance.model.node.Challenge
 import ch.hellorin.challengames.service.challenge.IChallengeAdminService
+import ch.hellorin.challengames.service.user.UserService
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 import java.security.Principal

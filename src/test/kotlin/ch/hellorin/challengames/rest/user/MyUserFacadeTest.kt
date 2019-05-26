@@ -3,7 +3,7 @@ package ch.hellorin.challengames.rest.user
 import ch.hellorin.challengames.configuration.TestConfiguration
 import ch.hellorin.challengames.persistance.model.node.Role
 import ch.hellorin.challengames.persistance.repository.RoleRepository
-import ch.hellorin.challengames.service.UserService
+import ch.hellorin.challengames.service.user.UserService
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith

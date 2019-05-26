@@ -1,11 +1,12 @@
-package ch.hellorin.challengames.service
+package ch.hellorin.challengames.service.ranking
 
 import ch.hellorin.challengames.configuration.ProviderConfiguration
 import ch.hellorin.challengames.configuration.TestConfiguration
 import ch.hellorin.challengames.service.challenge.IChallengeAdminService
-import ch.hellorin.challengames.service.challenge.IChallengeService
 import ch.hellorin.challengames.service.provider.GameDataDto
 import ch.hellorin.challengames.service.provider.IGameProvider
+import ch.hellorin.challengames.service.ranking.IRankingService
+import ch.hellorin.challengames.service.user.IUserService
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test

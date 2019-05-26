@@ -2,7 +2,7 @@ package ch.hellorin.challengames.rest.user
 
 import ch.hellorin.challengames.PlayerDto
 import ch.hellorin.challengames.rest.FacadeMapper
-import ch.hellorin.challengames.service.UserService
+import ch.hellorin.challengames.service.user.UserService
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
