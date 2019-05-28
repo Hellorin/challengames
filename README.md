@@ -24,7 +24,7 @@ IN DEVELOPMENT
 ```
 server:
   port: 8081
-	servlet:
+  servlet:
     session:
       cookie:
         http-only: true
