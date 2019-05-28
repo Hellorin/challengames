@@ -24,6 +24,11 @@ IN DEVELOPMENT
 ```
 server:
   port: 8081
+	servlet:
+    session:
+      cookie:
+        http-only: true
+        secure: true
 
 spring:
   data:
